@@ -1,0 +1,265 @@
+body, ul, li, h1, h2, img {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+header {
+    background-color: black; /* Or #0B3D91 */
+    padding: 20px;
+    /* text-align: center; */
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+}
+
+header .head {
+    text-align: left;
+    max-width: 1200px;
+}
+
+header .head img {
+    float: left;
+    max-width: 10em;
+    margin: 2px;
+    height: auto;
+    width: auto;
+}
+
+header .head h1 {
+    float: left;
+    color: white;
+    border: 5px solid #FC3D21;
+    padding: 6px;
+    margin: 40px 0;
+    border-radius: 20px;
+    top: 100px;
+    font-family: Arial;
+    background-color: #0B3D91;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.banner .webb {
+    position: absolute;
+    left: 0;
+    top: 20%; /*better to use percent than pixel */
+    padding: 30px;
+    color: aliceblue;
+    text-align: justify;
+    font-family: ariel;
+    font-size: 200%;
+    font-weight: bold;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.banner .detail {
+    position: absolute;
+    background: white;
+    padding: 80px 30px;
+    top: 65%;
+    left: 50px;
+}
+
+.banner .detail h2 {
+    font-family: Arial;
+    text-align: left;
+    text-decoration: underline red 4px;
+    font-size: 30px;
+}
+
+.banner .detail p {
+    font-family: Arial;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.banner .detail p span {
+    font-weight: bold;
+}
+
+.banner .detail p a {
+    text-decoration: none;
+    color: #0B3D91;
+}
+
+nav {
+    background-color: #FC3D21;
+    padding: 20px;
+    position: sticky;
+    top: 180px;
+}
+
+
+nav ul {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a.news {
+    color: #0B3D91;
+}
+
+main {
+    max-width: 100%;
+    width: 1300px;
+    margin: 100px auto;
+    padding: 20px 60px;
+    box-sizing: border-box;
+    background-color: #ede2e2;
+    border-radius: 10px;
+}
+
+article h2 {
+    color: black;
+    font-size: 48px;
+    font-family: Arial;
+    font-size: 200%;
+    font-weight: bold;
+    text-decoration: underline red 4px;
+    padding: 20px 0;
+}
+
+article p {
+    line-height: 2em;
+    color: black;
+    letter-spacing: 1px;
+    text-align: justify;
+    column-gap: 60px;
+    font-family: Arial;
+}
+
+.image {
+    text-align: center;
+    margin: 100px 0;
+    white-space: nowrap;
+}
+
+.image li {
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+
+/* .image li img {
+    max-width: 120%;
+} */
+
+.image li .img1 a img {
+    max-width: 120%;
+}
+
+.image li .img1 a desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.image li .img2 a img {
+    max-width: 120%;
+}
+
+.image li .img2 a desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.source {
+    padding: 0 50px;
+}
+
+.source p {
+    font-weight: bold;
+}
+
+.source p a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.join-us {
+    background: #0B3D91;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.join-us h2 {
+    font-size: 36px;
+    color: white;
+}
+
+form input{
+    margin: 20px 0;
+    padding: 20px 10px;
+    font-size: 24px;
+    border: 4px solid red;
+    border-radius: 30px;
+    width: 300px;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .foot img {
+    max-width: 10%;
+    /* padding: 2px; */
+}
+
+footer .foot p {
+    font-size: 3px;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    padding: 3px;
+}
+
+.image li:hover {
+    position: relative;
+    top: -4px;
+}
+
+form input:focus {
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+
+form input:valid {
+    border: 4px solid green;
+}
+
+form input:invalid {
+    border: 4px solid #FC3D21;
+}
+
+p::selection {
+    background-color: #FC3D21;
+    color: #0B3D91; 
+}
